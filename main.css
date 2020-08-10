@@ -217,7 +217,9 @@ h6 {
   .linkShow {
     display: block;
     position: absolute;
-    left: 40%;
+    top: 15%;
+    left: 50%;
+    margin-left: -60px;
   }
 
   .links {
