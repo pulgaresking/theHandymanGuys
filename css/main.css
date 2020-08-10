@@ -10,6 +10,9 @@
 
   --mainText: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--mainText);
@@ -17,6 +20,7 @@ body {
 }
 
 img {
+  width: 450px;
   border: 1px solid #000;
   -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
@@ -83,8 +87,12 @@ h6 {
 }
 
 #intro-section {
-  /* background: var(--mainColor);       will put img later */
+  background-image: url("../images/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 450px;
+  border-bottom: 3px solid var(--secondaryColor);
+  color: white;
 }
 
 .intro-items {
@@ -94,13 +102,15 @@ h6 {
 .intro-items button {
   padding: 10px;
   background: var(--mainColor);
-  color: #000;
-  border: 1px solid black;
+  border: none;
   cursor: pointer;
   border-radius: 5%;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+.intro-items button a {
+  color: #000;
 }
 
 .left {
@@ -111,6 +121,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "img content";
   padding: 40px 0px;
+  gap: 20px;
 }
 .left-img {
   grid-area: img;
@@ -121,6 +132,27 @@ h6 {
   grid-area: content;
   justify-self: center;
 }
+.rLink {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #000;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+.findOutMore {
+  justify-self: start;
+  color: #000;
+}
+.contactUs {
+  justify-self: end;
+  color: #000;
+}
+.contactUs:hover {
+  color: var(--secondaryColor);
+}
+.findOutMore:hover {
+  color: var(--secondaryColor);
+}
 
 /* .right {
   background: var(--mainColor);
@@ -130,6 +162,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "content img";
   padding: 40px 0px;
+  gap: 20px;
 }
 .right-img {
   grid-area: img;
@@ -280,6 +313,10 @@ h6 {
 }
 
 @media screen and (max-width: 650px) {
+  img {
+    width: 350px;
+  }
+
   .footer-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -292,6 +329,9 @@ h6 {
 }
 
 @media screen and (max-width: 400px) {
+  img {
+    width: 300px;
+  }
   .left-wrapper {
     margin-top: 70px;
   }
