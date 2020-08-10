@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #f7f052;
+  --secondaryColor: #27474e;
+
+  --mainText: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--mainText);
+  line-height: 1.6;
+}
+
+img {
+  border: 1px solid #000;
+  -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.main-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#header {
+  background: var(--secondaryColor);
+  color: #fff;
+}
+.contact {
+  width: 300px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+.header-navigation a:hover {
+  color: var(--mainColor);
+}
+
+#header li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+}
+.header-navigation {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 90px;
+}
+
+#intro-section {
+  /* background: var(--mainColor);       will put img later */
+  height: 450px;
+}
+
+.intro-items {
+  width: 50%;
+  padding: 50px 0px;
+}
+.intro-items button {
+  padding: 10px;
+  background: var(--mainColor);
+  color: #000;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5%;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.left {
+  background: var(--mainColor);
+}
+.left-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img content";
+  padding: 40px 0px;
+}
+.left-img {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+.left-content {
+  grid-area: content;
+  justify-self: center;
+}
+
+/* .right {
+  background: var(--mainColor);
+} */
+.right-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "content img";
+  padding: 40px 0px;
+}
+.right-img {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+.right-content {
+  grid-area: content;
+}
+
+#footer {
+  background: var(--secondaryColor);
+  color: white;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
