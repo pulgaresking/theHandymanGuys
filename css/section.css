@@ -186,6 +186,9 @@ h6 {
   color: var(--mainColor);
   transform: translateY(-5px);
 }
+#footer a:hover {
+  color: var(--mainColor);
+}
 
 @media screen and (max-width: 600px) {
   .content-wrapper {
@@ -210,9 +213,6 @@ h6 {
 @media screen and (max-width: 400px) {
   #header {
     grid-template-columns: 1fr;
-  }
-  .header-navigation li {
-    /* padding: 10px; */
   }
   img {
     height: 150px;

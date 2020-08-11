@@ -189,6 +189,9 @@ textarea {
   color: var(--mainColor);
   transform: translateY(-5px);
 }
+#footer a:hover {
+  color: var(--mainColor);
+}
 
 @media screen and (max-width: 650px) {
   img {
@@ -209,7 +212,7 @@ textarea {
       "footerMLeft"
       "footerMRight"
       "footerRight"
-      "footerBottom";   
+      "footerBottom";
   }
 }
 

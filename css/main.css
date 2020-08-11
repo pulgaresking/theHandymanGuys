@@ -90,9 +90,15 @@ h6 {
   background-image: url("../images/intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 470px;
   border-bottom: 3px solid var(--secondaryColor);
   color: white;
+}
+.intro-links {
+  line-height: 2;
+}
+.intro-links a:hover {
+  color: var(--mainColor);
 }
 
 .intro-items {
@@ -115,6 +121,7 @@ h6 {
 
 .left {
   background: var(--mainColor);
+  overflow: hidden;
 }
 .left-wrapper {
   display: grid;
@@ -123,7 +130,7 @@ h6 {
   padding: 40px 0px;
   gap: 20px;
 }
-.left-img {
+.left-image {
   grid-area: img;
   justify-self: center;
   align-self: center;
@@ -154,9 +161,9 @@ h6 {
   color: var(--secondaryColor);
 }
 
-/* .right {
-  background: var(--mainColor);
-} */
+.right {
+  overflow: hidden;
+}
 .right-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -164,7 +171,7 @@ h6 {
   padding: 40px 0px;
   gap: 20px;
 }
-.right-img {
+.right-image {
   grid-area: img;
   justify-self: center;
   align-self: center;
@@ -241,6 +248,9 @@ h6 {
   color: var(--mainColor);
   transform: translateY(-5px);
 }
+#footer a:hover {
+  color: var(--mainColor);
+}
 
 @media screen and (max-width: 800px) {
   .contact {
@@ -250,7 +260,7 @@ h6 {
   .linkShow {
     display: block;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     margin-left: -60px;
   }
@@ -335,4 +345,47 @@ h6 {
   .left-wrapper {
     margin-top: 70px;
   }
+  #intro-section {
+    height: 570px;
+  }
+}
+
+/* ANIMATIONS */
+
+.left-content,
+.right-image {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-in-out;
+}
+.left-image,
+.right-wrapper {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-in-out;
+}
+.intro-title,
+.intro-subtitle,
+.intro-links,
+.intro-btn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+.intro-subtitle {
+  transition-delay: 0.5s;
+}
+.intro-links {
+  transition-delay: 1s;
+}
+.intro-btn {
+  transition-delay: 1.5s;
+}
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.animation-appear {
+  opacity: 1;
+  transform: translateX(0px);
 }
