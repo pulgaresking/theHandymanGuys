@@ -63,6 +63,9 @@ h6 {
   width: 100%;
   height: 100px;
 }
+#contact-us {
+  overflow: hidden;
+}
 .contact-header {
   justify-self: center;
   align-self: center;
@@ -223,4 +226,22 @@ textarea {
   .header-navigation li {
     padding: 10px;
   }
+}
+
+/* ANIMATIONS */
+
+.left {
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  transform: translateX(-100px);
+}
+.right {
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  transform: translateX(100px);
+}
+
+.animation-appear {
+  opacity: 1;
+  transform: translate(0px);
 }
