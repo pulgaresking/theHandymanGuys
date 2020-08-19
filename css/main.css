@@ -181,6 +181,33 @@ h6 {
   grid-area: content;
 }
 
+#Hire-us {
+  background: var(--mainColor);
+  text-align: center;
+  padding: 20px 0px;
+}
+.hireItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px 0px;
+}
+.hireItems i {
+  color: var(--secondaryColor);
+}
+.contact-btn {
+  padding: 10px;
+  font-weight: 600;
+  margin: 5px;
+  background: var(--secondaryColor);
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
 #footer {
   background: var(--secondaryColor);
   color: white;
@@ -339,25 +366,24 @@ h6 {
   }
 }
 .contact-fixed {
-  background: orange;
   position: fixed;
   bottom: 5%;
   right: 1%;
   padding: 10px;
-  background: var(--secondaryColor);
-  border: none;
+  background: #27ae60;
+  border: 1px solid white;
   cursor: pointer;
-  border-radius: 45%;
+  border-radius: 50px;
   z-index: 3;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-.contact-fixed:hover {
+/* .contact-fixed:hover {
   background: var(--mainColor);
-}
+} */
 .contact-fixed a {
-  font-weight: 600;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 400px) {
