@@ -21,6 +21,7 @@ body {
 
 img {
   width: 450px;
+  height: 300px;
   border: 1px solid #000;
   -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
@@ -194,12 +195,14 @@ h6 {
 }
 .hireItems i {
   color: var(--secondaryColor);
+  margin: 20px;
 }
 .contact-btn {
   padding: 10px;
   font-weight: 600;
   margin: 5px;
   background: var(--secondaryColor);
+  font-size: 20px;
   border: none;
   cursor: pointer;
   border-radius: 5%;
@@ -354,6 +357,9 @@ h6 {
   img {
     width: 350px;
   }
+  .hireItems {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   .footer-wrapper {
     grid-template-columns: 1fr;
@@ -372,6 +378,7 @@ h6 {
   padding: 10px;
   background: #27ae60;
   border: 1px solid white;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 50px;
   z-index: 3;
@@ -379,9 +386,7 @@ h6 {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-/* .contact-fixed:hover {
-  background: var(--mainColor);
-} */
+
 .contact-fixed a {
   font-weight: 900;
 }

@@ -19,10 +19,6 @@ body {
 img {
   width: 100%;
   height: 450px;
-  /* border: 1px solid #000;
-    -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75); */
 }
 ul {
   list-style: none;
@@ -89,6 +85,12 @@ section {
   justify-items: center;
   gap: 20px;
   padding: 20px 0px;
+}
+.content-wrapper img {
+  border: 1px solid #000;
+  -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
 }
 
 .left {

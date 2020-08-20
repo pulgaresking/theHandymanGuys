@@ -49,6 +49,7 @@ function showAnimation() {
     }
   });
 }
+
 window.addEventListener("scroll", showAnimation);
 
 function introAnimation() {
