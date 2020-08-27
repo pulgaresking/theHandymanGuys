@@ -69,6 +69,7 @@ h6 {
   width: 300px;
   margin: 0px auto;
   padding-top: 20px;
+  text-align: center;
 }
 .header-navigation a:hover {
   color: var(--mainColor);
@@ -91,10 +92,11 @@ h6 {
   background-image: url("../images/intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 470px;
+  height: 100%;
   border-bottom: 3px solid var(--secondaryColor);
   color: white;
 }
+
 .intro-links {
   line-height: 2;
 }
@@ -103,10 +105,34 @@ h6 {
 }
 
 .intro-items {
-  width: 50%;
+  width: 100%;
   padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " intro-left intro-right";
+  grid-column-gap: 10px;
 }
-.intro-items button {
+.intro-right {
+  grid-area: intro-right;
+  background: var(--secondaryColor);
+  padding: 10px;
+  justify-self: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.intro-right input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.intro-left {
+  grid-area: intro-left;
+  /* background: green; */
+}
+.intro-items button,
+.intro-right input[type="submit"] {
   padding: 10px;
   background: var(--mainColor);
   border: none;
@@ -116,7 +142,8 @@ h6 {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-.intro-items button a {
+.intro-items button a,
+.intro-right input[type="submit"] {
   color: #000;
   font-weight: 600;
 }
@@ -328,6 +355,13 @@ h6 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro-left"
+      "intro-right";
+  }
+  .intro-left {
+    margin-bottom: 30px;
   }
 
   .left-wrapper {
@@ -398,9 +432,6 @@ h6 {
   .left-wrapper {
     margin-top: 70px;
   }
-  #intro-section {
-    height: 570px;
-  }
 }
 
 /* ANIMATIONS */
@@ -417,22 +448,16 @@ h6 {
   transform: translateX(-100px);
   transition: all 0.8s ease-in-out;
 }
-.intro-title,
-.intro-subtitle,
-.intro-links,
-.intro-btn {
+
+.intro-left {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
-.intro-subtitle {
-  transition-delay: 0.5s;
-}
-.intro-links {
-  transition-delay: 1s;
-}
-.intro-btn {
-  transition-delay: 1.5s;
+.intro-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease-in-out;
 }
 .intro-appear {
   opacity: 1;

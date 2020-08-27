@@ -139,6 +139,41 @@ section {
   color: black;
   font-weight: 600;
 }
+#contact-form {
+  margin: 100px 0px;
+  border-top: 3px solid var(--secondaryColor);
+  padding-top: 100px;
+}
+#contact-form h3 {
+  text-align: center;
+}
+.form-wrapper {
+  max-width: 600px;
+  background: #eaeaea;
+  padding: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+label {
+  line-height: 40px;
+}
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+}
+textarea {
+  height: 70px;
+}
+#submitBtn {
+  background: var(--secondaryColor);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  font-weight: 700;
+}
 
 #footer {
   background: var(--secondaryColor);

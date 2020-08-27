@@ -53,14 +53,10 @@ function showAnimation() {
 window.addEventListener("scroll", showAnimation);
 
 function introAnimation() {
-  const title = document.querySelector(".intro-title");
-  const subTitle = document.querySelector(".intro-subtitle");
-  const links = document.querySelector(".intro-links");
-  const btn = document.querySelector(".intro-btn");
+  const left = document.querySelector(".intro-left");
+  const right = document.querySelector(".intro-right");
 
-  title.classList.add("intro-appear");
-  subTitle.classList.add("intro-appear");
-  links.classList.add("intro-appear");
-  btn.classList.add("intro-appear");
+  left.classList.add("intro-appear");
+  right.classList.add("intro-appear");
 }
 introAnimation();
